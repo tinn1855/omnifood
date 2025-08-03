@@ -86,8 +86,9 @@
     margin-top: 3.2rem;
   }
 
-  .logos img {
-    height: 2.4rem;
+  .logos {
+    flex-wrap: wrap;
+    gap: 2.4rem;
   }
 
   .step-number {
@@ -249,10 +250,10 @@
   .hero-img {
     width: 80%;
   }
-
+  /* 
   .logos img {
     height: 1.2rem;
-  }
+  } */
 
   .step-img-box:nth-child(2) {
     grid-row: 1;
