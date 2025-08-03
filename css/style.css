@@ -195,7 +195,6 @@
   filter: brightness(1);
   opacity: 100%;
   transition: all 0.3s;
-  cursor: pointer;
 }
 /************************/
 /* HOW IT WORKS SECTION  */

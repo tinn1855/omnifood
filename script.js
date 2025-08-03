@@ -24,9 +24,21 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+    if (link.classList.contains("btn--full")) {
+      headerEl.classList.toggle("nav-open");
+    }
 
     // Close mobile naviagtion
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
   });
+});
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 0) {
+    header.classList.add("header-shadow");
+  } else {
+    header.classList.remove("header-shadow");
+  }
 });
